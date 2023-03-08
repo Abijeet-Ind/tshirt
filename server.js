@@ -23,7 +23,7 @@ mongoose.connect(connectionInfo).then(data => {
     console.log('FAILED TO CONNECT');
 })
 
-const server = app.listen(port, () => {
+const server = app.listen(() => {
     console.log('server is running');
 })
 
