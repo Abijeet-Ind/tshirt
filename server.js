@@ -1,5 +1,5 @@
 const app = require('./app');
-const port = 80;
+const port = 80 || 3000 || 8080;
 const mongoose = require('mongoose');
 
 process.on('uncaughtException', (err) => {
