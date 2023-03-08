@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Nepal</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font family  -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="form-bg form-color-primary">
+
+        <!-- login form START  -->
+        <div class="form-card" id="loginDiv">
+            <h2 class="form-heading">Login</h2>
+
+            <div class="form-body">
+                <div class="form-switch">
+                    <span class="btn-login" id="btn-login">Login</span>
+                    <span class="btn-signUp" id="btn-signUp">Signup</span>
+                </div>
+                <form action="">
+                    <div class="css-form-control">
+                        <div class="form-control-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <input type="email" name="email" class="form-input-text" placeholder="Email" />
+                    </div>
+                    <div class="css-form-control">
+                        <div class="form-control-icon"><i class="fa-solid fa-lock"></i></div>
+                        <input type="password" name="password" class="form-input-text" placeholder="Password" />
+                    </div>
+                    <div class="css-form-control">
+                        <input type="checkbox" name="remember" id="remenber" class="form-input-checkbox" />
+                        <label for="remenber">Remember Me</label>
+                    </div>
+                    <div class="css-form-control">
+                        <button type="submit" class="btn-form-submit btn-success">Login</button>
+                    </div>
+                    <div class="css-form-control">
+                        <span><a href="#" class="form-color-primary">Forget Password</a></span>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- login form END  -->
+        <div class="form-card" id="signUpDiv">
+            <h2 class="form-heading">Sign Up</h2>
+
+            <div class="form-body">
+                <div class="form-switch">
+                    <span class="btn-login" id="toLogin">Login</span>
+                    <span class="btn-signUp" id="btn-signUp">Signup</span>
+                </div>
+                <form action="">
+                    <div class="css-form-control">
+                        <div class="form-control-icon"><i class="fa-solid fa-user"></i></div>
+                        <input type="Name" name="name" class="form-input-text" placeholder="Name" />
+                    </div>
+                    <div class="css-form-control">
+                        <div class="form-control-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <input type="email" name="email" class="form-input-text" placeholder="Email" />
+                    </div>
+                    <div class="css-form-control">
+                        <div class="form-control-icon"><i class="fa-solid fa-lock"></i></div>
+                        <input type="password" name="password" class="form-input-text" placeholder="Password" />
+                    </div>
+                    <div class="css-form-control">
+                        <input type="checkbox" name="remember" id="remenber" class="form-input-checkbox" />
+                        <label for="remenber">Remember Me</label>
+                    </div>
+                    <div class="css-form-control">
+                        <button type="submit" class="btn-form-submit btn-success">Sign Up</button>
+                    </div>
+
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+
+
+        $(document).ready(function () {
+
+            $("#btn-signUp").click(function () {
+                $("#loginDiv").fadeOut(700);
+                $("#signUpDiv").fadeIn();
+
+            });
+
+            $("#toLogin").click(function () {
+                $("#signUpDiv").fadeOut(700);
+                $("#loginDiv").fadeIn();
+            });
+
+
+
+        });
+
+
+    </script>
+</body>
+
+
+
+</html>

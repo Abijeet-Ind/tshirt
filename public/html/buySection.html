@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buy section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+        integrity="sha512-X/RSQYxFb/tvuz6aNRTfKXDnQzmnzoawgEQ4X8nZNftzs8KFFH23p/BA6D2k0QCM4R0sY1DEy9MIY9b3fwi+bg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
+        integrity="sha512-f28cvdA4Bq3dC9X9wNmSx21rjWI+5piIW/uoc2LuQ67asKxfQjUow2MkcCNcfJiaLrHcGbed1wzYe3dlY4w9gA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./../css/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://icms-image.slatic.net/images/ims-web/458d4688-ae26-4e6d-8f39-c26194de228a.png" width="50%"
+                alt="">
+        </div>
+        <nav class="navBar">
+            <div>
+                <div class="content-border">
+                    <input type="text" name="search" id="search" placeholder="search"
+                        style="outline: none; border: transparent; padding-left: 1rem;">
+                    <button class="button" style="height: 100%; width: fit-content; padding: 0 .5rem 0 .5rem;">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+            <ol>
+                <li class="account"><a href="" style="color:#ff3f6c; font-family: 'Montserrat', sans-serif;">My
+                        Account</a></li>
+                <li class="cart">
+                    <div class="add-cart">
+                        <i class="bi bi-bag"></i>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+
+        <div class="mobile-nav">
+            <div class="add-cart">
+                <i class="bi bi-bag"></i>
+            </div>
+            <div class="ham-menu">
+                <i class="bi bi-list"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="check-out-container d-flex">
+        <div class="insider">
+            <div class="checkout-information-fillup">
+                <label class="bold-text">Checkout</label>
+                <br>
+                <br>
+                <label>Contact Info</label>
+                <div class="contact-info">
+                    <input class="spacer" type="email" name="" id="" placeholder="email">
+                    <input class="spacer" type="number" name="" id="" placeholder="contact number">
+                </div>
+                <br>
+                <label>Shopping Info</label>
+                <div class="contact-info">
+                    <input class="spacer" type="text" name="" id="" placeholder="name">
+                    <input class="spacer" type="text" name="" id="" placeholder="area detail">
+
+                    <input class="spacer" type="pincode" name="" id="" placeholder="name">
+                    <input class="spacer" type="text" name="" id="" placeholder="shipping address">
+                    <div class="address">
+                        <input class="widther spacer" type="text" name="" id="" placeholder="city">
+                        <select class="widther spacer" name="" id="select">
+                            <option value="morang">morang</option>
+                            <option value="sunsari">sunsari</option>
+                            <option value="kathmandu">kathmandu</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-product-display">
+                <label class="bold-text">Payment</label>
+                <br><br><br>
+                <div class="payment-container">
+                    <p class="payment-text">Payment</p>
+                    <hr>
+                    <div class="total-payable">
+                        <p for="payment-text total_price">Total Payable</p>
+                        <label for="price">550</label>
+                    </div>
+                    <button class="place-order"> Place Order</button>
+                </div>
+                <br>
+                <div class="payment-container">
+                    <p class="payment-text">Summary</p>
+                    <hr>
+                    <div class="image-name-size-display total-payable">
+                        <div>
+                            <img src="./../images/product/Statue-Of-Liberty-hoodie_meta.png" alt="" height="100vh">
+                            <label for="price">Status of Liberty</label>
+                        </div>
+                        <div class="price-tag">
+                            <label for="price">500</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="delivery-section">
+                        <label for="delivery-charge-text">Delivery </label>
+                        <label class="price" for="price">Free</label>
+                    </div>
+                    <hr>
+                    <div class="sub-total-section">
+                        <label for="sub-total-text">Sub-Total </label>
+                        <label for="price">500</label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <footer style="color: white; background-color: #ff3f6c;  text-align: center;">
+        <p style="padding: 1rem;">
+            @all copyright reserved
+        </p>
+    </footer> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            items: 4,
+            lazyLoad: true,
+            loop: true,
+            margin: 10
+        });
+
+        classChecker = (classes) => {
+            classes.forEach(el => {
+                if (el.classList.contains('activeDiv')) {
+                    return el.classList.remove('activeDiv');
+                }
+            });
+        }
+
+        looper = (element) => {
+            element.forEach(el => {
+                el.addEventListener('click', e => {
+                    classChecker(element);
+                    return el.classList.toggle('activeDiv');
+                })
+            })
+        }
+
+        const SizeButton = document.querySelectorAll('.size-variations button');
+        const QuantityButton = document.querySelectorAll('.quantityVariations button');
+        const ColorButton = document.querySelectorAll('.color-variations div');
+
+        looper(SizeButton);
+        looper(ColorButton);
+        looper(QuantityButton);
+    </script>
+
+</body>
+
+</html>
