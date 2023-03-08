@@ -16,7 +16,7 @@ require('dotenv').config({
 console.log(process.env.NODE_ENV);
 
 const connectionInfo = process.env.dbId.replace('<password>', process.env.dbPSW);
-
+mongoose.set('strictQuery', false);
 mongoose.connect(connectionInfo).then(data => {
     console.log('connected to database')
 }).catch(err => {
