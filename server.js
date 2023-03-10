@@ -1,5 +1,5 @@
 const app = require('./app');
-const port = 80 || 3000 || 8080;
+const port = process.env.PORT || 4000
 const mongoose = require('mongoose');
 
 process.on('uncaughtException', (err) => {
@@ -15,16 +15,16 @@ require('dotenv').config({
 
 console.log(process.env.NODE_ENV);
 
-const connectionInfo = process.env.dbId.replace('<password>', process.env.dbPSW);
+// const connectionInfo = process.env.dbId.replace('<password>', process.env.dbPSW);
 mongoose.set('strictQuery', false);
-mongoose.connect(connectionInfo).then(data => {
+mongoose.connect(process.env.dbId).then(data => {
     console.log('connected to database')
 }).catch(err => {
     console.log('FAILED TO CONNECT');
 })
 
 const server = app.listen(port, () => {
-    console.log('server is running');
+    console.log('server is running on',port);
 })
 
 process.on('unhandledRejection', (err) => {
